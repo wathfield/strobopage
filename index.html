@@ -9,14 +9,26 @@
 <body>
 
     <div id="controls">
-        <label for="intervalInput">Interval (seconds):</label>
-        <input type="number" id="intervalInput" value="1">
-
-        <label for="lengthInput">Length of Each Interval (seconds):</label>
-        <input type="number" id="lengthInput" value="0.5">
-
-        <label for="colorInput">Foreground Color:</label>
-        <input type="color" id="colorInput" value="#ffffff">
+        <div class="input_container">
+            <label for="intervalInput">Interval (sec):</label>
+            <input type="number" id="intervalInput" value="1">
+        </div>
+        <div class="input_container">
+            <label for="lengthInput">Length of Each Interval (sec):</label>
+            <input type="number" id="lengthInput" value="0.2">
+        </div>
+        <div class="input_container">
+            <label for="colorInput">Foreground Color:</label>
+            <input type="color" id="colorInput" value="#ffffff">
+        </div>
+        <div class="input_container">
+            <label for="colorInput">Background Color:</label>
+            <input type="color" id="backColorInput" value="#dddddd">
+        </div>
+        <div class="input_container">
+            <label for="colorTransitionInput">Transition (sec):</label>
+            <input type="number" id="TransitionTimeInput" value="0.5">
+        </div>
 
         <button onclick="startStroboscope()">Start</button>
         <button onclick="stopStroboscope()">Stop</button>

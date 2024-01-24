@@ -2,32 +2,38 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
 }
 
-#strobeContainer {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*transition: background-color 0.5s;*/
-}
-
-#controls {
-    display: flex;
-    justify-content: space-around;
+.input_container {
     padding: 10px;
 }
 
+#controls {
+    /*background-color: black;*/
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: fit-content;
+}
+
 input {
-    padding: 5px;
-    margin-right: 10px;
-    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: fit-content;
 }
 
 button {
     padding: 5px 10px;
     cursor: pointer;
+}
+
+#strobeContainer {
+    height: 100vh;
+    display: flex;
+    /*align-items: center;
+    justify-content: center;*/
+    /*transition: background-color 0.5s;*/
 }
