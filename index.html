@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StroboPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="controls">
+        <label for="intervalInput">Interval (seconds):</label>
+        <input type="number" id="intervalInput" value="1">
+
+        <label for="lengthInput">Length of Each Interval (seconds):</label>
+        <input type="number" id="lengthInput" value="0.5">
+
+        <label for="colorInput">Foreground Color:</label>
+        <input type="color" id="colorInput" value="#ffffff">
+
+        <button onclick="startStroboscope()">Start</button>
+        <button onclick="stopStroboscope()">Stop</button>
+    </div>
+
+    <div id="strobeContainer"></div>
+
+    <script type="text/javascript" src="script.js" defer>
+    </script>
+
+</body>
+</html>
